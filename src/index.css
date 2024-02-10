@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Proza+Libre&family=Source+Code+Pro&family=Trirong&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --proza-libre: 'Proza Libre',
+        Arial,
+        Helvetica,
+        sans-serif;
+    --trirong: 'Trirong',
+        Arial,
+        Helvetica,
+        sans-serif;
+    --press-start-2p: 'Press Start 2P',
+        Arial,
+        Helvetica,
+        sans-serif;
+    --source-code-pro: 'Source Code Pro',
+        Menlo,
+        Monaco,
+        Consolas,
+        'Courier New',
+        monospace;
+}
+
+body {
+    margin: 0;
+    font-family: var(--proza-libre);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-proza-libre {
+    font-family: var(--proza-libre);
+}
+
+.font-press-start-2p {
+    font-family: var(--press-start-2p);
+}
+
+.font-source-code-pro {
+    font-family: var(--source-code-pro);
+}
+
+.font-trirong {
+    font-family: var(--trirong);
+}
+
+code {
+    font-family: var(--source-code-pro);
+}
+
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}

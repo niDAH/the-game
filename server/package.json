@@ -1,0 +1,40 @@
+{
+    "name": "db-api",
+    "version": "0.0.2",
+    "description": "express/knex api for db(s)",
+    "main": "index.js",
+    "scripts": {
+        "reset": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+        "start": "nodemon ./src/index.js --watch './*'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "api",
+        "bcryptjs",
+        "cors",
+        "express",
+        "helmet",
+        "jsonwebtoken",
+        "knex",
+        "node",
+        "nodemon",
+        "sqlite3"
+    ],
+    "author": "Demian Holmberg",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "helmet": "^6.1.5",
+        "jsonwebtoken": "^9.0.0",
+        "knex": "^2.4.2",
+        "nodemon": "^2.0.22",
+        "sqlite3": "^5.1.6"
+    },
+    "devDependencies": {
+        "config": "^3.3.9",
+        "prettier": "^2.8.8"
+    }
+}

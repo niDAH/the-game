@@ -1,0 +1,74 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
+        "baseUrl": "./src",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "paths": {
+            "@/*": [
+                "*"
+            ],
+            "@assets/*": [
+                "assets/*"
+            ],
+            "@components/*": [
+                "components/*"
+            ],
+            "@constants/*": [
+                "constants/*"
+            ],
+            "@hooks/*": [
+                "hooks/*"
+            ],
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@reducers/*": [
+                "reducers/*"
+            ],
+            "@routes/*": [
+                "routes/*"
+            ],
+            "@services/*": [
+                "app/services/*"
+            ],
+            "@slices/*": [
+                "slices/*"
+            ],
+            "@types/*": [
+                "types/*"
+            ],
+            "@utils/*": [
+                "utils/*"
+            ],
+        },
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+    },
+    "include": [
+        "src"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}
